@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_delivery_app/pages/starting_page.dart';
 
@@ -17,6 +18,8 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
+        // SystemChrome.setSystemUIOverlayStyle(
+        //     SystemUiOverlayStyle(statusBarColor: Colors.transparent));
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'First Method',
