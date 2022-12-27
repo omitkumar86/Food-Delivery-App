@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_delivery_app/const/color.dart';
 import 'package:food_delivery_app/const/style.dart';
+import 'package:food_delivery_app/nav_bar/bottom_nav_bar.dart';
 import 'package:food_delivery_app/pages/home_page.dart';
 
 class StartingPage extends StatelessWidget {
@@ -87,14 +88,14 @@ class StartingPage extends StatelessWidget {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => HomePage()));
+                              builder: (context) => BottomNavBar()));
                         },
                         child: Container(
                           alignment: Alignment.center,
                           height: 62.h,
                           width: double.infinity,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.r),
+                              borderRadius: BorderRadius.circular(15.r),
                               color: primaryOrange),
                           child: Text(
                             "Get Started",
